@@ -20,7 +20,7 @@ class Blockchain{
     }
 
     createGenesisBlock(){
-        return new Block(0,"2019-02-03","Genesis block",0);
+        return new Block(0,"2019-02-03","Genesis block","0");
     }
 
     getLatestBlock(){
@@ -34,7 +34,7 @@ class Blockchain{
     } 
 }
 
-let medhaPesa = newBlockchain();
+let medhaPesa = new Blockchain();
 medhaPesa.addBlock(new Block(1,"2019-02-03" ,{ amount : 4}));
 medhaPesa.addBlock(new Block(1,"2019-02-03 ",{ amount : 10}));
 
